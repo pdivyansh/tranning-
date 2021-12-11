@@ -1,0 +1,41 @@
+#include<stdio.h>
+void enter_element(int arr[],int n)
+{
+int i;
+printf("enter array element:");
+for(i=0;i<n;i++)
+scanf("%d",&arr[i]);
+
+}
+void print(int arr[],int n)
+{int i;
+	printf("printing the element");
+for(i=0;i<n;i++)
+printf("%d\n",arr[i]);
+}
+void bubble_sort(int arr[],int n)
+{
+	int i,j,temp;	
+	for(i=0;i<n-1;i++)
+	{
+		for(j=0;j<n-1-i;j++)
+		{
+			if(arr[j]>arr[j+1])
+			{
+			temp=arr[j];
+			arr[j]=arr[j+1];
+			arr[j+1]=temp;	
+			}
+		}
+	}
+}
+int main()
+{
+int n;
+printf("enter the size of array:");
+scanf("%d",&n);
+int arr[n];
+enter_element(arr,n);
+bubble_sort(arr,n);
+print(arr,n);
+}
