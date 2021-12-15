@@ -1,0 +1,28 @@
+public class Sample
+{
+    public static void main(String[] args)
+    {
+        String address="Delhi,India";
+        if(address.contains("India"))
+        {
+            if(address.contains("Noida"))
+            {
+                System.out.println("your city is Noida");
+            }
+           else if(address.contains("Delhi"))
+            {
+                System.out.println("your city is delhi");
+                
+            }
+            else
+            {
+                System.out.println("your city is another");
+            }
+            
+        }
+    }
+}
+
+
+
+
