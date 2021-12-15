@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Number {
+    public static void main(String[] args) {
+        System.out.println("Enter the first number :");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.println("Enter the second number :");
+        int b=sc.nextInt();
+        if(a+b==20)
+        {
+            System.out.println("the sum of two number is 20");
+        }
+        else if(a+b>20)
+        {
+            System.out.println("the sum of two number is greater than 20");
+        }
+        else
+        {
+            System.out.println("the sum of two number is less than 20.");
+        }
+    }
+}
